@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "jclalala"
+  },
+  "dependencies": {},
+  "description": "React Native bridge for using native Firebase GTM Analytics libraries on iOS and Android",
+  "devDependencies": {},
+  "keywords": [
+    "react",
+    "native",
+    "google",
+    "tag",
+    "manager",
+    "firebase",
+    "native",
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "react-native-firebase-gtm",
+  "optionalDependencies": {},
+  "readmeFilename": "README.md",
+  "version": "0.1.1"
+}
