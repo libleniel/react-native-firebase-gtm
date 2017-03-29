@@ -22,7 +22,11 @@ const ReactNativeFirebaseGtm = {
      * @param {string} name - length: 1~24 chars
      * @param {string} value - length: 1~36 chars
      */
-    setUserProperty: function(name, value) {
+    setUserProperty: function(name, value='') {
+        // Convert value to string.
+        //   In iOS, non-string such as NSNumber cannot implicitly be converted to NSString 
+        value = '' + value;
+
     	return RCTFirebaseGtm.setUserProperty(name, value);
     }
 }
