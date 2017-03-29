@@ -18,6 +18,11 @@ public class ReactNativeFirebaseGtm extends ReactContextBaseJavaModule{
         FirebaseAnalytics.getInstance(getReactApplicationContext()).logEvent(name, Arguments.toBundle(parameters));
     }
 
+    @ReactMethod
+    public void setUserProperty(String name, String value) {
+        FirebaseAnalytics.getInstance(getReactApplicationContext()).setUserProperty(name, value);
+    }
+
     @Override
     public String getName() {
         return "ReactNativeFirebaseGtm";
