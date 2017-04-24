@@ -3,8 +3,9 @@
 import { NativeModules } from 'react-native';
 
 const RCTFirebaseGtm = NativeModules.ReactNativeFirebaseGtm;
+const RCTFirebaseRemoteConfig = NativeModules.ReactNativeFirebaseRemoteConfig;
 
-const ReactNativeFirebaseGtm = {
+export const ReactNativeFirebaseGtm = {
     /**
      * @param {String}json The json object to process
      */
@@ -28,7 +29,44 @@ const ReactNativeFirebaseGtm = {
         value = '' + value;
 
     	return RCTFirebaseGtm.setUserProperty(name, value);
-    }
+    },
 }
 
-module.exports = ReactNativeFirebaseGtm;
+export const ReactNativeFirebaseRemoteConfig = {
+    /**
+     * Tell Firebase to fetch new/cached values from Firebase Remote Config,
+     * 
+     * @param {number} cacheTime - cache time in seconds, default: 43200, which is 12 hours
+     */
+    fetchRemoteConfig: function(cacheTime=43200) {
+        RCTFirebaseRemoteConfig.fetchRemoteConfig(cacheTime);
+    },
+
+    /**
+     * Async function to return the remote config value (as String) for given key
+
+     * @param {string} key - The name of the key
+     * @return {string} the value fetched in String
+     */
+    getStringAsync: function(key) {
+        return new Promise((resolve) => {
+            RCTFirebaseRemoteConfig.getString(key, (value) => {
+                resolve(value);
+            });
+        });
+    },
+
+    /**
+     * Async function to return the remote config value (as Boolean) for given key
+
+     * @param {string} key - The name of the key
+     * @return {boolean} the value fetched in Boolean
+     */
+    getBooleanAsync: function(key) {
+        return new Promise((resolve) => {
+            RCTFirebaseRemoteConfig.getBoolean(key, (value) => {
+                resolve(value);
+            });
+        });
+    },
+}

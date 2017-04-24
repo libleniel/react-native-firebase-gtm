@@ -17,6 +17,7 @@ public class ReactNativeFirebaseGtmPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
 
         modules.add(new ReactNativeFirebaseGtm(reactContext));
+        modules.add(new ReactNativeFirebaseRemoteConfig(reactContext));
 
         return modules;
     }
