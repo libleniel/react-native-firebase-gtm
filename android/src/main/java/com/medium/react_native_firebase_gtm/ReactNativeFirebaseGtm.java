@@ -57,8 +57,9 @@ public class ReactNativeFirebaseGtm extends ReactContextBaseJavaModule{
     }
 
     /**
-     * Return the remote config value for given key
+     * Return the remote config value (as String) for given key
      * @param key The name of the key
+     * @return the value fetched in String
      */
     @ReactMethod
     public String getRemoteConfigValue(String key) {
