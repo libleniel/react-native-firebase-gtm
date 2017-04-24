@@ -15,4 +15,5 @@ dependencies {
     compile 'com.facebook.react:react-native:+'
     compile 'com.google.firebase:firebase-core:+'
     compile 'com.google.android.gms:play-services-tagmanager:+'
+    compile 'com.google.firebase:firebase-config:+'
 }
