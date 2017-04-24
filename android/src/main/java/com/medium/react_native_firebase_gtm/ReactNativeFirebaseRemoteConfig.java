@@ -28,11 +28,10 @@ public class ReactNativeFirebaseRemoteConfig extends ReactContextBaseJavaModule 
      * Conversion Warning: param cacheTime is passed as int (because react-native doesn't recognize long),
      *                     but mFirebaseRemoteConfig.fetch actually takes long as parameter
      *
-     * @param cacheTime cache time in seconds, default: 43200L, which is 12 hours
+     * @param cacheTime cache time in seconds
      */
     @ReactMethod
     public void fetchRemoteConfig(int cacheTime) {
-        cacheTime = (cacheTime == 0 ? 43200: cacheTime);
         mFirebaseRemoteConfig.fetch(cacheTime)
                 .addOnCompleteListener(this.getCurrentActivity(), new OnCompleteListener<Void>() {
                     @Override
