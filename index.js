@@ -42,7 +42,7 @@ export const ReactNativeFirebaseRemoteConfig = {
         RCTFirebaseRemoteConfig.fetchRemoteConfig(cacheTime);
     },
 
-    setDefault: function(defaults={}) {
+    setDefaults: function(defaults={}) {
         RCTFirebaseRemoteConfig.setDefaults(defaults);
     },
 
