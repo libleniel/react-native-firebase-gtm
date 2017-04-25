@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1EE08A571E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE08A551E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m */; };
+		5FEDE7811EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */; };
+		5FEDE7871EAF8CFF00F7ED6F /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEDE7861EAF8CFF00F7ED6F /* Protobuf.framework */; };
+		5FEDE7891EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEDE7881EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework */; };
 		D6B9F8C01E790149001A00C1 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BA1E790149001A00C1 /* FirebaseAnalytics.framework */; };
 		D6B9F8C11E790149001A00C1 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BB1E790149001A00C1 /* FirebaseCore.framework */; };
 		D6B9F8C21E790149001A00C1 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BC1E790149001A00C1 /* FirebaseInstanceID.framework */; };
@@ -34,6 +37,10 @@
 		1EE08A551E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeFirebaseGtm.m; sourceTree = "<group>"; };
 		1EE08A561E714A8300D2B9E2 /* ReactNativeFirebaseGtm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeFirebaseGtm.h; sourceTree = "<group>"; };
 		1EE543161D2B58AC003A909C /* libReactNativeFirebaseGtm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeFirebaseGtm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FEDE77F1EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeFirebaseRemoteConfig.h; sourceTree = "<group>"; };
+		5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeFirebaseRemoteConfig.m; sourceTree = "<group>"; };
+		5FEDE7861EAF8CFF00F7ED6F /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Frameworks/Protobuf.framework; sourceTree = "<group>"; };
+		5FEDE7881EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseRemoteConfig.framework; path = Frameworks/FirebaseRemoteConfig.framework; sourceTree = "<group>"; };
 		D6B9F8BA1E790149001A00C1 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		D6B9F8BB1E790149001A00C1 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore/Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
 		D6B9F8BC1E790149001A00C1 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
@@ -56,7 +63,9 @@
 				D6B9F8C21E790149001A00C1 /* FirebaseInstanceID.framework in Frameworks */,
 				D6B9F8C31E790149001A00C1 /* GoogleSymbolUtilities.framework in Frameworks */,
 				D6B9F8C41E790149001A00C1 /* GoogleTagManager.framework in Frameworks */,
+				5FEDE7891EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework in Frameworks */,
 				D6B9F8C01E790149001A00C1 /* FirebaseAnalytics.framework in Frameworks */,
+				5FEDE7871EAF8CFF00F7ED6F /* Protobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,8 @@
 				1EFF4A6F1E71537D00B7C444 /* Frameworks */,
 				1EE08A551E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m */,
 				1EE08A561E714A8300D2B9E2 /* ReactNativeFirebaseGtm.h */,
+				5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */,
+				5FEDE77F1EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.h */,
 				1EE543171D2B58AC003A909C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +96,8 @@
 		1EFF4A6F1E71537D00B7C444 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FEDE7881EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework */,
+				5FEDE7861EAF8CFF00F7ED6F /* Protobuf.framework */,
 				D6B9F8D21E7907DD001A00C1 /* GoogleToolboxForMac */,
 				D6B9F8C61E790166001A00C1 /* libGoogleAnalytics.a */,
 				D6B9F8BA1E790149001A00C1 /* FirebaseAnalytics.framework */,
@@ -154,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE08A571E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m in Sources */,
+				5FEDE7811EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m in Sources */,
 				D6B9F8D51E79082B001A00C1 /* GTMNSData+zlib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +267,7 @@
 					"$(PROJECT_DIR)/Frameworks/GoogleSymbolUtilities/Frameworks/frameworks",
 					"$(PROJECT_DIR)/Frameworks/GoogleTagManager/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/GoogleUtilities/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
@@ -282,6 +297,7 @@
 					"$(PROJECT_DIR)/Frameworks/GoogleSymbolUtilities/Frameworks/frameworks",
 					"$(PROJECT_DIR)/Frameworks/GoogleTagManager/Frameworks",
 					"$(PROJECT_DIR)/Frameworks/GoogleUtilities/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
