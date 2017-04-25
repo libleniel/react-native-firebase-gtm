@@ -35,7 +35,7 @@ public class ReactNativeFirebaseRemoteConfig extends ReactContextBaseJavaModule 
     @ReactMethod
     public void fetchRemoteConfig(int cacheTime) {
         mFirebaseRemoteConfig.fetch(cacheTime)
-                .addOnCompleteListener(this.getCurrentActivity(), new OnCompleteListener<Void>() {
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(Task<Void> task) {
                         if (task.isSuccessful()) {
