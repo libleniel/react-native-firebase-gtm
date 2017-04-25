@@ -7,10 +7,12 @@ import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableMap;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
-import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
+
+import java.util.Map;
 
 public class ReactNativeFirebaseRemoteConfig extends ReactContextBaseJavaModule {
     private FirebaseRemoteConfig mFirebaseRemoteConfig;
@@ -46,6 +48,16 @@ public class ReactNativeFirebaseRemoteConfig extends ReactContextBaseJavaModule 
                         }
                     }
                 });
+    }
+
+    /**
+     * Pass a map-like object as firebase remote config defaults
+     * @param parameter javascript object
+     */
+    @ReactMethod
+    public void setDefaults(ReadableMap parameter) {
+        Map<String, Object> defaults = ConversionUtils.toMap(parameter);
+        mFirebaseRemoteConfig.setDefaults(defaults);
     }
 
     /**
