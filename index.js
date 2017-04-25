@@ -42,6 +42,10 @@ export const ReactNativeFirebaseRemoteConfig = {
         RCTFirebaseRemoteConfig.fetchRemoteConfig(cacheTime);
     },
 
+    setDefault: function(defaults={}) {
+        RCTFirebaseRemoteConfig.setDefaults(defaults);
+    },
+
     /**
      * Async function to return the remote config value (as String) for given key
 
