@@ -16,4 +16,5 @@ dependencies {
     compile 'com.google.firebase:firebase-core:+'
     compile 'com.google.android.gms:play-services-tagmanager:+'
     compile 'com.google.firebase:firebase-config:+'
+    compile 'com.google.firebase:firebase-invites:+'
 }
