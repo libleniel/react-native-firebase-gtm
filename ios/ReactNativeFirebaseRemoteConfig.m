@@ -15,6 +15,10 @@ RCT_EXPORT_MODULE(ReactNativeFirebaseRemoteConfig)
     return self;
 }
 
++ (BOOL)requiresMainQueueSetup {
+    return YES;
+}
+
 RCT_EXPORT_METHOD(fetchRemoteConfig:(int)cacheTime)
 {
     [self.remoteConfig fetchWithExpirationDuration:cacheTime completionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
