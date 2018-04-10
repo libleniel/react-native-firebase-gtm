@@ -30,6 +30,17 @@ export const ReactNativeFirebaseGtm = {
 
     	return RCTFirebaseGtm.setUserProperty(name, value);
     },
+    kFIRConstant: {
+        kFIRParameterCurrency: RCTFirebaseGtm.kFIRParameterCurrency,
+        kFIREventViewItem: RCTFirebaseGtm.kFIREventViewItem,
+        kFIREventBeginCheckout: RCTFirebaseGtm.kFIREventBeginCheckout,
+        kFIRParameterCheckoutStep: RCTFirebaseGtm.kFIRParameterCheckoutStep,
+        kFIREventEcommercePurchase: RCTFirebaseGtm.kFIREventEcommercePurchase,
+        kFIREventAddToCart: RCTFirebaseGtm.kFIREventAddToCart,
+        kFIREventRemoveFromCart: RCTFirebaseGtm.kFIREventRemoveFromCart,
+        kFIREventViewSearchResults: RCTFirebaseGtm.kFIREventViewSearchResults,
+        kFIREventSelectContent: RCTFirebaseGtm.kFIREventSelectContent,
+    },
 }
 
 export const ReactNativeFirebaseRemoteConfig = {
