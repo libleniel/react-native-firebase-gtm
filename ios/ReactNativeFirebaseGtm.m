@@ -18,4 +18,18 @@ RCT_EXPORT_METHOD(setUserProperty: (NSString*)name value:(NSString*)value)
 	[FIRAnalytics setUserPropertyString:value forName:name];
 }
 
+- (NSDictionary *)constantsToExport
+{
+    return @{ @"kFIRParameterCurrency": kFIRParameterCurrency,
+              @"kFIREventViewItem": kFIREventViewItem,
+              @"kFIREventBeginCheckout": kFIREventBeginCheckout,
+              @"kFIRParameterCheckoutStep": kFIRParameterCheckoutStep,
+              @"kFIREventEcommercePurchase": kFIREventEcommercePurchase,
+              @"kFIREventAddToCart": kFIREventAddToCart,
+              @"kFIREventRemoveFromCart": kFIREventRemoveFromCart,
+              @"kFIREventViewSearchResults": kFIREventViewSearchResults,
+              @"kFIREventSelectContent": kFIREventSelectContent,
+              };
+}
+
 @end
