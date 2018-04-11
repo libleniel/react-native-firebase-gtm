@@ -32,4 +32,8 @@ RCT_EXPORT_METHOD(setUserProperty: (NSString*)name value:(NSString*)value)
               };
 }
 
++ (BOOL)requiresMainQueueSetup {    
+	return YES;
+}
+
 @end
