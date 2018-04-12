@@ -20,15 +20,27 @@ RCT_EXPORT_METHOD(setUserProperty: (NSString*)name value:(NSString*)value)
 
 - (NSDictionary *)constantsToExport
 {
-    return @{ @"kFIRParameterCurrency": kFIRParameterCurrency,
-              @"kFIREventViewItem": kFIREventViewItem,
+    return @{ @"kFIREventViewItem": kFIREventViewItem,
               @"kFIREventBeginCheckout": kFIREventBeginCheckout,
-              @"kFIRParameterCheckoutStep": kFIRParameterCheckoutStep,
               @"kFIREventEcommercePurchase": kFIREventEcommercePurchase,
               @"kFIREventAddToCart": kFIREventAddToCart,
               @"kFIREventRemoveFromCart": kFIREventRemoveFromCart,
               @"kFIREventViewSearchResults": kFIREventViewSearchResults,
               @"kFIREventSelectContent": kFIREventSelectContent,
+              @"kFIRParameterCurrency": kFIRParameterCurrency,
+              @"kFIRParameterCheckoutStep": kFIRParameterCheckoutStep,
+              @"kFIRParameterItemList": kFIRParameterItemList,
+              @"kFIRParameterItemID": kFIRParameterItemID,
+              @"kFIRParameterItemName": kFIRParameterItemName,
+              @"kFIRParameterItemCategory": kFIRParameterItemCategory,
+              @"kFIRParameterItemBrand": kFIRParameterItemBrand,
+              @"kFIRParameterPrice": kFIRParameterPrice,
+              @"kFIRParameterIndex": kFIRParameterIndex,
+              @"kFIRParameterQuantity": kFIRParameterQuantity,
+              @"kFIRParameterTransactionID": kFIRParameterTransactionID,
+              @"kFIRParameterValue": kFIRParameterValue,
+              @"kFIRParameterShipping": kFIRParameterShipping,
+              @"kFIRParameterCoupon": kFIRParameterCoupon,
               };
 }
 
