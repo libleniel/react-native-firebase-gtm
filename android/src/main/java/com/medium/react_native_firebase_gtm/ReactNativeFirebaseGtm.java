@@ -9,6 +9,8 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.analytics.FirebaseAnalytics.Event;
 import com.google.firebase.analytics.FirebaseAnalytics.Param;
 import java.util.*;
+import android.os.Bundle;
+import android.util.Log;
 
 public class ReactNativeFirebaseGtm extends ReactContextBaseJavaModule{
     public ReactNativeFirebaseGtm(ReactApplicationContext reactContext) {
