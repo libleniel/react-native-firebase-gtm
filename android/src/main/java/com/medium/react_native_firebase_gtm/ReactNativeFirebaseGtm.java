@@ -17,7 +17,40 @@ public class ReactNativeFirebaseGtm extends ReactContextBaseJavaModule{
 
     @ReactMethod
     public void push(String name, ReadableMap parameters) {
-        FirebaseAnalytics.getInstance(getReactApplicationContext()).logEvent(name, Arguments.toBundle(parameters));
+        Bundle ecommerceBundle = new Bundle();
+        ecommerceBundle = Arguments.toBundle(parameters);
+
+        //Need to correct some params, as toBundle function will convert Number to Double only on Android
+        //Because we need Long on some params, we need to convert it manually from its bundle
+        if (name.equals(Event.SELECT_CONTENT) || name.equals(Event.BEGIN_CHECKOUT)
+            || name.equals(Event.ECOMMERCE_PURCHASE)) {
+            ArrayList<Bundle> items = new ArrayList<Bundle>();
+            items = ecommerceBundle.getParcelableArrayList("items");
+            for (int i = 0; i < items.size(); i++) {
+                try {
+                    double idx = items.get(i).getDouble(Param.INDEX, -1);
+                    if (idx != -1)
+                        items.get(i).putLong(Param.INDEX, (long)idx);
+                
+                    double qty = items.get(i).getDouble(Param.QUANTITY, -1);
+                    if (qty != -1)
+                        items.get(i).putLong(Param.QUANTITY, (long)qty);
+                    
+                } catch(Exception e) {
+                    Log.e("FIREBASEGTM", "push: " + e);
+                }
+            }
+            ecommerceBundle.putParcelableArrayList("items", items);
+
+            try {
+                double step = ecommerceBundle.getDouble(Param.CHECKOUT_STEP, -1);
+                if (step != -1)
+                    ecommerceBundle.putLong(Param.CHECKOUT_STEP, (long)step);
+            } catch(Exception e) {
+                Log.e("FIREBASEGTM", "push: " + e);
+            }
+        }
+        FirebaseAnalytics.getInstance(getReactApplicationContext()).logEvent(name, ecommerceBundle);
     }
 
     @ReactMethod
