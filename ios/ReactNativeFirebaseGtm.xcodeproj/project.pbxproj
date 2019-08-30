@@ -9,16 +9,6 @@
 /* Begin PBXBuildFile section */
 		1EE08A571E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE08A551E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m */; };
 		5FEDE7811EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */; };
-		5FEDE7871EAF8CFF00F7ED6F /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEDE7861EAF8CFF00F7ED6F /* Protobuf.framework */; };
-		5FEDE7891EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEDE7881EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework */; };
-		D6B9F8C01E790149001A00C1 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BA1E790149001A00C1 /* FirebaseAnalytics.framework */; };
-		D6B9F8C11E790149001A00C1 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BB1E790149001A00C1 /* FirebaseCore.framework */; };
-		D6B9F8C21E790149001A00C1 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BC1E790149001A00C1 /* FirebaseInstanceID.framework */; };
-		D6B9F8C31E790149001A00C1 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BD1E790149001A00C1 /* GoogleSymbolUtilities.framework */; };
-		D6B9F8C41E790149001A00C1 /* GoogleTagManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BE1E790149001A00C1 /* GoogleTagManager.framework */; };
-		D6B9F8C51E790149001A00C1 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8BF1E790149001A00C1 /* GoogleUtilities.framework */; };
-		D6B9F8C71E790166001A00C1 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9F8C61E790166001A00C1 /* libGoogleAnalytics.a */; };
-		D6B9F8D51E79082B001A00C1 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9F8D41E79082B001A00C1 /* GTMNSData+zlib.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,17 +29,7 @@
 		1EE543161D2B58AC003A909C /* libReactNativeFirebaseGtm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeFirebaseGtm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEDE77F1EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeFirebaseRemoteConfig.h; sourceTree = "<group>"; };
 		5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeFirebaseRemoteConfig.m; sourceTree = "<group>"; };
-		5FEDE7861EAF8CFF00F7ED6F /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Frameworks/Protobuf.framework; sourceTree = "<group>"; };
-		5FEDE7881EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseRemoteConfig.framework; path = Frameworks/FirebaseRemoteConfig.framework; sourceTree = "<group>"; };
-		D6B9F8BA1E790149001A00C1 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		D6B9F8BB1E790149001A00C1 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore/Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		D6B9F8BC1E790149001A00C1 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		D6B9F8BD1E790149001A00C1 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities/Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		D6B9F8BE1E790149001A00C1 /* GoogleTagManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleTagManager.framework; path = Frameworks/GoogleTagManager/Frameworks/GoogleTagManager.framework; sourceTree = "<group>"; };
-		D6B9F8BF1E790149001A00C1 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities/Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		D6B9F8C61E790166001A00C1 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Frameworks/GoogleAnalytics/Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
-		D6B9F8D21E7907DD001A00C1 /* GoogleToolboxForMac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GoogleToolboxForMac; path = Frameworks/GoogleToolboxForMac; sourceTree = "<group>"; };
-		D6B9F8D41E79082B001A00C1 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Frameworks/GoogleToolboxForMac/Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		7A264174231797840063993C /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,15 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6B9F8C71E790166001A00C1 /* libGoogleAnalytics.a in Frameworks */,
-				D6B9F8C51E790149001A00C1 /* GoogleUtilities.framework in Frameworks */,
-				D6B9F8C11E790149001A00C1 /* FirebaseCore.framework in Frameworks */,
-				D6B9F8C21E790149001A00C1 /* FirebaseInstanceID.framework in Frameworks */,
-				D6B9F8C31E790149001A00C1 /* GoogleSymbolUtilities.framework in Frameworks */,
-				D6B9F8C41E790149001A00C1 /* GoogleTagManager.framework in Frameworks */,
-				5FEDE7891EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework in Frameworks */,
-				D6B9F8C01E790149001A00C1 /* FirebaseAnalytics.framework in Frameworks */,
-				5FEDE7871EAF8CFF00F7ED6F /* Protobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,13 +46,12 @@
 		1EE5430D1D2B58AC003A909C = {
 			isa = PBXGroup;
 			children = (
-				D6B9F8D41E79082B001A00C1 /* GTMNSData+zlib.m */,
-				1EFF4A6F1E71537D00B7C444 /* Frameworks */,
 				1EE08A551E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m */,
 				1EE08A561E714A8300D2B9E2 /* ReactNativeFirebaseGtm.h */,
 				5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */,
 				5FEDE77F1EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.h */,
 				1EE543171D2B58AC003A909C /* Products */,
+				7A264173231797840063993C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,19 +63,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1EFF4A6F1E71537D00B7C444 /* Frameworks */ = {
+		7A264173231797840063993C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FEDE7881EAF8D0700F7ED6F /* FirebaseRemoteConfig.framework */,
-				5FEDE7861EAF8CFF00F7ED6F /* Protobuf.framework */,
-				D6B9F8D21E7907DD001A00C1 /* GoogleToolboxForMac */,
-				D6B9F8C61E790166001A00C1 /* libGoogleAnalytics.a */,
-				D6B9F8BA1E790149001A00C1 /* FirebaseAnalytics.framework */,
-				D6B9F8BB1E790149001A00C1 /* FirebaseCore.framework */,
-				D6B9F8BC1E790149001A00C1 /* FirebaseInstanceID.framework */,
-				D6B9F8BD1E790149001A00C1 /* GoogleSymbolUtilities.framework */,
-				D6B9F8BE1E790149001A00C1 /* GoogleTagManager.framework */,
-				D6B9F8BF1E790149001A00C1 /* GoogleUtilities.framework */,
+				7A264174231797840063993C /* libGoogleToolboxForMac.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +110,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 1EE5430D1D2B58AC003A909C;
@@ -168,7 +130,6 @@
 			files = (
 				1EE08A571E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m in Sources */,
 				5FEDE7811EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m in Sources */,
-				D6B9F8D51E79082B001A00C1 /* GTMNSData+zlib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,27 +219,15 @@
 		1EE543201D2B58AC003A909C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks/FirebaseAnalytics/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/FirebaseCore/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/FirebaseInstanceID/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleSymbolUtilities/Frameworks/frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleTagManager/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleUtilities/Frameworks/frameworks",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
-					"$(PROJECT_DIR)/Frameworks/**",
+					"$(SRCROOT)/../../../ios/Pods/**",
+					"$(SRCROOT)/../../../ios/Pods/FirebaseRemoteConfig/Frameworks/FirebaseRemoteConfig.framework/Headers",
+					"$(SRCROOT)/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks/GoogleAnalytics/Libraries",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -288,27 +237,15 @@
 		1EE543211D2B58AC003A909C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks/FirebaseAnalytics/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/FirebaseCore/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/FirebaseInstanceID/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleSymbolUtilities/Frameworks/frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleTagManager/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleUtilities/Frameworks/frameworks",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**",
-					"$(PROJECT_DIR)/Frameworks/**",
+					"$(SRCROOT)/../../../ios/Pods/**",
+					"$(SRCROOT)/../../../ios/Pods/FirebaseRemoteConfig/Frameworks/FirebaseRemoteConfig.framework/Headers",
+					"$(SRCROOT)/../../../ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/lib",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks/GoogleAnalytics/Libraries",
-				);
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
