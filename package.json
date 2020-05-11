@@ -17,6 +17,7 @@
     "ios",
     "android"
   ],
+  "homepage": "https://github.com/libleniel/react-native-firebase-gtm",
   "license": "MIT",
   "main": "./index.js",
   "name": "react-native-firebase-gtm",
