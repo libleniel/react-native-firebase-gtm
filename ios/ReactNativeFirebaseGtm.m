@@ -1,6 +1,6 @@
 #import "ReactNativeFirebaseGtm.h"
 
-#import "FirebaseAnalytics.h"
+#import <FirebaseAnalytics/FirebaseAnalytics.h>
 
 @implementation ReactNativeFirebaseGtm
 
