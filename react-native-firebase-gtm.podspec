@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
   s.dependency 'Firebase/Analytics'
   s.dependency 'Firebase/RemoteConfig'
   s.dependency 'GoogleTagManager'
+  s.dependency 'Firebase/Crashlytics'
 end
