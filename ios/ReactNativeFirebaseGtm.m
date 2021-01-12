@@ -8,6 +8,7 @@ RCT_EXPORT_MODULE(ReactNativeFirebaseGtm)
 
 @synthesize bridge = _bridge;
 
+//MARK: - Analytics
 RCT_EXPORT_METHOD(push: (NSString*)name property: (NSDictionary*)parameters)
 {
     [FIRAnalytics logEventWithName:name parameters:parameters];
@@ -44,6 +45,7 @@ RCT_EXPORT_METHOD(setUserProperty: (NSString*)name value:(NSString*)value)
               };
 }
 
+//MARK: - Setup
 + (BOOL)requiresMainQueueSetup {    
 	return YES;
 }

@@ -2,8 +2,24 @@
 
 import { NativeModules } from 'react-native';
 
+const RCTCrashlytics = NativeModules.ReactNativeCrashlytics
 const RCTFirebaseGtm = NativeModules.ReactNativeFirebaseGtm;
 const RCTFirebaseRemoteConfig = NativeModules.ReactNativeFirebaseRemoteConfig;
+
+export const ReactNativeCrashlytics = {
+    logMessage: function(message, params = {}) {
+        return RCTCrashlytics.logMessage(message, params)
+    },
+    logNonFatalError: function(error, code, domain) {
+        return RCTCrashlytics.logNonFatalError(error, code, domain)
+    },
+    setUserId: function(uid) {
+        return RCTCrashlytics.setUserId(uid)
+    },
+    setCustomValue: function(value) {
+        return RCTCrashlytics.setCustomValue(value)
+    }
+}
 
 export const ReactNativeFirebaseGtm = {
     /**
