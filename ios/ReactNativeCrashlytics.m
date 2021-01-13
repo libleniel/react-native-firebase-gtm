@@ -16,7 +16,11 @@ RCT_EXPORT_MODULE(ReactNativeCrashlytics)
 //MARK: - Log
 RCT_EXPORT_METHOD(logMessage: (NSString*)message withAttributes: (NSDictionary*)attributes)
 {
-  [[FIRCrashlytics crashlytics]logWithFormat:@"%@ - %@", message, attributes];
+  if (attributes && [attributes count] > 0) {
+    [[FIRCrashlytics crashlytics]logWithFormat: @"%@ - %@", message, attributes];
+  } else {
+    [[FIRCrashlytics crashlytics]log: message];
+  }
 }
 
 RCT_EXPORT_METHOD(logNonFatalError: (NSString*)message withCode: (NSInteger)code andDomain: (NSString*)domain)
