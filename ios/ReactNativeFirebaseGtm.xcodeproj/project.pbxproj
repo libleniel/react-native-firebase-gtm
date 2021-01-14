@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EE08A571E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE08A551E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m */; };
 		5FEDE7811EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */; };
+		BD755C6E25B043C700EDD6DC /* ReactNativeFirebaseCrashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = BD755C6D25B043C700EDD6DC /* ReactNativeFirebaseCrashlytics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,8 @@
 		5FEDE77F1EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeFirebaseRemoteConfig.h; sourceTree = "<group>"; };
 		5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeFirebaseRemoteConfig.m; sourceTree = "<group>"; };
 		7A264174231797840063993C /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD755C6C25B043C700EDD6DC /* ReactNativeFirebaseCrashlytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeFirebaseCrashlytics.h; sourceTree = "<group>"; };
+		BD755C6D25B043C700EDD6DC /* ReactNativeFirebaseCrashlytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeFirebaseCrashlytics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,8 @@
 		1EE5430D1D2B58AC003A909C = {
 			isa = PBXGroup;
 			children = (
+				BD755C6C25B043C700EDD6DC /* ReactNativeFirebaseCrashlytics.h */,
+				BD755C6D25B043C700EDD6DC /* ReactNativeFirebaseCrashlytics.m */,
 				1EE08A551E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m */,
 				1EE08A561E714A8300D2B9E2 /* ReactNativeFirebaseGtm.h */,
 				5FEDE7801EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m */,
@@ -130,6 +135,7 @@
 			files = (
 				1EE08A571E714A8300D2B9E2 /* ReactNativeFirebaseGtm.m in Sources */,
 				5FEDE7811EAF89EF00F7ED6F /* ReactNativeFirebaseRemoteConfig.m in Sources */,
+				BD755C6E25B043C700EDD6DC /* ReactNativeFirebaseCrashlytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

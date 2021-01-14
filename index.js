@@ -1,23 +1,28 @@
 "use strict";
 
-import { NativeModules } from 'react-native';
+import { NativeModules, Platform } from 'react-native';
 
-const RCTCrashlytics = NativeModules.ReactNativeCrashlytics
+const RCTFirebaseCrashlytics = NativeModules.ReactNativeFirebaseCrashlytics;
 const RCTFirebaseGtm = NativeModules.ReactNativeFirebaseGtm;
 const RCTFirebaseRemoteConfig = NativeModules.ReactNativeFirebaseRemoteConfig;
 
-export const ReactNativeCrashlytics = {
+export const ReactNativeFirebaseCrashlytics = {
     logMessage: function(message, params = {}) {
-        return RCTCrashlytics.logMessage(message, params)
+        if (Platform.OS == 'ios') {
+            return RCTFirebaseCrashlytics.logMessage(message, params)
+        } else {
+            return RCTFirebaseCrashlytics.logMessage(message)
+        }
+        
     },
     logNonFatalError: function(error, code, domain) {
-        return RCTCrashlytics.logNonFatalError(error, code, domain)
+        return RCTFirebaseCrashlytics.logNonFatalError(error, code, domain)
     },
     setUserId: function(uid) {
-        return RCTCrashlytics.setUserId(uid)
+        return RCTFirebaseCrashlytics.setUserId(uid)
     },
     setCustomValue: function(value) {
-        return RCTCrashlytics.setCustomValue(value)
+        return RCTFirebaseCrashlytics.setCustomValue(value)
     }
 }
 

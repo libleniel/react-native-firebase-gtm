@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
 
-@interface ReactNativeCrashlytics : NSObject <RCTBridgeModule>
+@interface ReactNativeFirebaseCrashlytics : NSObject <RCTBridgeModule>
 
 @end

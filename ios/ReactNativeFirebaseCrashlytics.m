@@ -1,10 +1,10 @@
-#import "ReactNativeCrashlytics.h"
+#import "ReactNativeFirebaseCrashlytics.h"
 
 #import <FirebaseCrashlytics/FirebaseCrashlytics.h>
 
-@implementation ReactNativeCrashlytics
+@implementation ReactNativeFirebaseCrashlytics
 
-RCT_EXPORT_MODULE(ReactNativeCrashlytics)
+RCT_EXPORT_MODULE(ReactNativeFirebaseCrashlytics)
 
 @synthesize bridge = _bridge;
 
