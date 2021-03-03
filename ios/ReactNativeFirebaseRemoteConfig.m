@@ -23,7 +23,9 @@ RCT_EXPORT_METHOD(fetchRemoteConfig:(int)cacheTime)
 {
     [self.remoteConfig fetchWithExpirationDuration:cacheTime completionHandler:^(FIRRemoteConfigFetchStatus status, NSError * _Nullable error) {
         if (status == FIRRemoteConfigFetchStatusSuccess) {
-            [self.remoteConfig activateFetched];
+          [self.remoteConfig activateWithCompletion:^(BOOL changed, NSError * _Nullable error) {
+            // ...
+          }];
         } else {
             NSLog(@"Fetch remote config: failed.");
         }
